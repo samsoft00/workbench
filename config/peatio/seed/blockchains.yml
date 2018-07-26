@@ -12,7 +12,7 @@
 - key:               eth-rinkeby
   name:              Ethereum Rinkeby
   client:            ethereum
-  server:            http://35.204.124.226:8545
+  server:            http://geth:8545
   height:            2701963
   min_confirmations: 6
   explorer:
