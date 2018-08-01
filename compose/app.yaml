@@ -21,7 +21,7 @@ services:
       - ../config/peatio:/opt/peatio/config:ro
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: api.wb.local'
+      traefik.frontend.rule: 'Host: qybit.com'
       traefik.port: 8000
     command: bash -c "bin/link_config && puma --config config/puma.rb"
 
@@ -40,7 +40,7 @@ services:
       - "8001"
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: auth.wb.local'
+      traefik.frontend.rule: 'Host: auth.qybit.com'
       traefik.port: 8001
 
   trading_ui:
@@ -55,5 +55,5 @@ services:
       - "8002"
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: api.wb.local; PathPrefix:/trading, /trading-ui-assets'
+      traefik.frontend.rule: 'Host: qybit.com; PathPrefix:/trading, /trading-ui-assets'
       traefik.port: 8002

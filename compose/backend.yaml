@@ -31,7 +31,7 @@ services:
       PHP_MAX_INPUT_VARS: 1G
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: pma.wb.local'
+      traefik.frontend.rule: 'Host: pma.qybit.com'
       traefik.port: 80
 
   rabbitmq:
@@ -59,9 +59,9 @@ services:
       APP_SECRET: bMoWeyjId0iSabGF6EY3coVhTpjW3Hpt
     labels:
       traefik.enable: true
-      traefik.ws.frontend.rule: 'Host: ws.slanger.wb.local'
+      traefik.ws.frontend.rule: 'Host: ws.slanger.qybit.com'
       traefik.ws.port: 8080
-      traefik.api.frontend.rule: 'Host: api.slanger.wb.local'
+      traefik.api.frontend.rule: 'Host: api.slanger.qybit.com'
       traefik.api.port: 4567
 
 volumes:

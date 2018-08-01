@@ -1,11 +1,11 @@
 # For other configuration options, see https://github.com/rubykube/toolbox/blob/master/bin/stress_trading
 
-root-url: http://api.wb.local
+root-url: http://qybit.com
 
 currencies: usd,eur
 markets: eurusd
 
-orders:  1000
+orders:  100
 traders: 10
 threads: 5
 management-api-v1-jwt-signer: toolbox

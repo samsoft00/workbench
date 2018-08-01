@@ -11,13 +11,13 @@ services:
     networks:
       default:
         aliases:
-          - api.wb.local
-          - auth.wb.local
-          - ws.slanger.wb.local
-          - api.slanger.wb.local
-          - pma.wb.local
-          - monitor.wb.local
+          - qybit.com
+          - auth.qybit.com
+          - ws.slanger.qybit.com
+          - api.slanger.qybit.com
+          - pma.qybit.com
+          - monitor.qybit.com
     labels:
       traefik.enable: true
-      traefik.frontend.rule: 'Host: monitor.wb.local'
+      traefik.frontend.rule: 'Host: monitor.qybit.com'
       traefik.port: 8080
